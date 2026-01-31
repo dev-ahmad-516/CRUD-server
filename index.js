@@ -7,8 +7,8 @@ const cors = require("cors");
 
 const port = process.env.PORT;
 connectDB();
-app.use(cors({ origin: "http://localhost:5173" }));
-// app.use(cors({ origin: "https://crud-client-beta.vercel.app" }));
+// app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://crud-client-beta.vercel.app" }));
 app.use(express.json());
 app.use("/products", productRouter);
 
